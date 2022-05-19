@@ -69,27 +69,21 @@
 
     <div id="gameDiv"></div>
 
-    <button id="btnCTA" onclick="ExitApi.exit()"></button>
-    <!--  <div class="checkfont" id="checkfont">
-        <p id='setcheckfont'>0</p>
-    </div> -->
-    <!-- 
-    <script type="text/javascript" src="bundle.min.js"></script> -->
+    <button id="btnCTA" onclick="fnctabtn()"></button>
 
     <script>
-        /* function fnctabtn() {
-                                                                    console.log("TTTTT")
-                                                                    var userAgent = navigator.userAgent || navigator.vendor;
-                                                                    var url = "https://apps.apple.com/us/app/splashlearn-kids-learning-app/id672658828";
-                                                                    var android =
-                                                                        "https://play.google.com/store/apps/details?id=com.splash.kids.education.learning.games.free.multiplication.reading.math.grade.app.splashmath";
-                                                                    if (/android/i.test(userAgent)) {
-                                                                        url = android;
-                                                                    }
-
-                                                                    FbPlayableAd.onCTAClick();
-                                                                    window.open(url);
-                                                                } */
+        function fnctabtn() {
+            console.log("TTTTT")
+            var userAgent = navigator.userAgent || navigator.vendor;
+            var url = "https://apps.apple.com/us/app/dragonvale/id440045374";
+            var android =
+                "https://play.google.com/store/apps/details?id=com.backflipstudios.android.dragonvale&hl=en&gl=US";
+            if (/android/i.test(userAgent)) {
+                url = android;
+            }
+            ExitApi.exit();
+            window.open(url);
+        }
     </script>
 <script type="text/javascript" src="bundle.min.js"></script></body>
 
